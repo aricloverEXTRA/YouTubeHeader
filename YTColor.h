@@ -1,6 +1,7 @@
-#import <UIKit/UIKit.h>
+#import <UIKit/UIColor.h>
 
-@interface YTColor : NSObject
+@interface YTColor : UIColor
++ (instancetype)colorWithRGB:(unsigned int)rgb floatAlpha:(CGFloat)alpha;
 + (UIColor *)white1;
 + (UIColor *)white2;
 + (UIColor *)white3;
@@ -11,5 +12,7 @@
 + (UIColor *)black2;
 + (UIColor *)black3;
 + (UIColor *)black4;
++ (instancetype)grey3Alpha70;
++ (instancetype)grey4Alpha60;
 + (UIColor *)youTubeRed;
 @end
