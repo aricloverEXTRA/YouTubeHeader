@@ -47,6 +47,7 @@ CF_EXTERN_C_END
 - (nullable NSData *)data;
 - (NSData *)delimitedData;
 - (size_t)serializedSize;
++ (GPBExtensionDescriptor *)descriptor;
 + (GPBDescriptor *)descriptor;
 - (GPBDescriptor *)descriptor;
 - (NSArray *)extensionsCurrentlySet;
