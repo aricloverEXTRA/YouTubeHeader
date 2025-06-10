@@ -78,7 +78,8 @@ __attribute__((objc_subclassing_restricted))
 @property(nonatomic, readonly) BOOL hasDefaultValue;
 @property(nonatomic, readonly) GPBGenericValue defaultValue;
 @property(nonatomic, readonly, getter=isRequired) BOOL required;
-@property(nonatomic, readonly, getter=isOptional) BOOL optional;
+@property(nonatomic, readonly, getter=isOptional) BOOL optional DEPRECATED_MSG_ATTRIBUTE(
+    "Check if fieldType is GPBFieldTypeSingle and that it is NOT required.");
 @property(nonatomic, readonly) GPBFieldType fieldType;
 @property(nonatomic, readonly) GPBDataType mapKeyDataType;
 @property(nonatomic, readonly, getter=isPackable) BOOL packable;
