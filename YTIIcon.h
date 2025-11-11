@@ -6,4 +6,5 @@
 @property (nonatomic, assign, readwrite) YTIcon iconType;
 - (UIImage *)iconImageWithColor:(UIColor *)color;
 - (UIImage *)iconImageWithSelected:(BOOL)selected;
+- (BOOL)hasIconType;
 @end

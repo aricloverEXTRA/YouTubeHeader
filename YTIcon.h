@@ -16,6 +16,8 @@ typedef enum {
     YT_MEH = 91,
     YT_SAD = 92,
     YT_VERY_SAD = 93,
+    YT_DOWNLOADS_OUTLINE = 147,
+    YT_DEFAULT_LOGO = 158, // Default Logo as seen in the Navigation Bar
     YT_LIKE = 160,
     YT_SWITCH_ACCOUNTS = 182,
     YT_FILTER = 193,
@@ -31,6 +33,8 @@ typedef enum {
     YT_COPY = 250,
     YT_QUEUE_PLAY_NEXT = 251,
     YT_ADD = 256,
+    YT_NOTIFICATIONS = 264, // Non-Outline
+    YT_NOTIFICATIONS_NONE = 269, // Outline
     YT_EMOJI = 279,
     YT_LIKE_SELECTED = 301,
     YT_DISLIK_SELECTED = 302,
@@ -49,6 +53,7 @@ typedef enum {
     YT_GOOGLE = 498,
     YT_HELP_OUTLINE = 513,
     YT_TUNE = 530,
+    YT_PREMIUM_LOGO = 537, // Premium Logo as seen in the Navigation Bar
     YT_TRANSLATE = 540,
     YT_ADD_SMALL = 560,
     YT_BOOKMARK = 565,
@@ -59,6 +64,7 @@ typedef enum {
     YT_REELS_COMMENT = 637,
     YT_REELS_COMMENT_FILL = 638,
     YT_CANCEL = 641,
+    YT_MY_VIDEOS = 658,
     YT_PREMIUM = 688,
     YT_SCREEN_ROTATION = 701,
     YT_PREMIUM_STANDALONE = 741,
