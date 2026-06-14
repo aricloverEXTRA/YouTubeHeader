@@ -24,9 +24,14 @@ typedef NS_ENUM(uint8_t, GPBFieldType) {
 
 __attribute__((objc_subclassing_restricted))
 @interface GPBDescriptor : NSObject<NSCopying>
-- (void)setupOneofs:(const char **)oneofNames count:(uint32_t)count firstHasIndex:(int32_t)firstHasIndex;
+
+- (void)setupOneofs:(const char * _Nonnull const * _Nonnull)oneofNames
+              count:(uint32_t)count
+     firstHasIndex:(int32_t)firstHasIndex;
+
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
+
 @property(nonatomic, readonly, copy) NSString *name;
 @property(nonatomic, readonly, strong, nullable) NSArray<GPBFieldDescriptor *> *fields;
 @property(nonatomic, readonly, strong, nullable) NSArray<GPBOneofDescriptor *> *oneofs;
@@ -49,6 +54,7 @@ __attribute__((objc_subclassing_restricted))
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
+
 @property(nonatomic, readonly, copy) NSString *package;
 @property(nonatomic, readonly, copy, nullable) NSString *objcPrefix;
 
@@ -59,6 +65,7 @@ __attribute__((objc_subclassing_restricted))
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
+
 @property(nonatomic, readonly) NSString *name;
 @property(nonatomic, readonly) NSArray<GPBFieldDescriptor *> *fields;
 
@@ -72,6 +79,7 @@ __attribute__((objc_subclassing_restricted))
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
+
 @property(nonatomic, readonly, copy) NSString *name;
 @property(nonatomic, readonly) uint32_t number;
 @property(nonatomic, readonly) GPBDataType dataType;
@@ -97,13 +105,16 @@ __attribute__((objc_subclassing_restricted))
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
+
 @property(nonatomic, readonly, copy) NSString *name;
 @property(nonatomic, readonly) GPBEnumValidationFunc enumVerifier;
 @property(nonatomic, readonly) BOOL isClosed;
+
 - (nullable NSString *)enumNameForValue:(int32_t)number;
 - (BOOL)getValue:(nullable int32_t *)outValue forEnumName:(NSString *)name;
 - (nullable NSString *)textFormatNameForValue:(int32_t)number;
 - (BOOL)getValue:(nullable int32_t *)outValue forEnumTextFormatName:(NSString *)textFormatName;
+
 @property(nonatomic, readonly) uint32_t enumNameCount;
 - (nullable NSString *)getEnumNameForIndex:(uint32_t)index;
 - (nullable NSString *)getEnumTextFormatNameForIndex:(uint32_t)index;
@@ -115,6 +126,7 @@ __attribute__((objc_subclassing_restricted))
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
+
 @property(nonatomic, readonly) uint32_t fieldNumber;
 @property(nonatomic, readonly) Class containingMessageClass;
 @property(nonatomic, readonly) GPBDataType dataType;
