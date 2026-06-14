@@ -1,5 +1,6 @@
 #import "MLFormat.h"
 #import "MLHAMPlayerItem.h"
+#import "MLPlayerReloadContext.h"
 #import "MLPlayerStickySettings.h"
 #import "MLQueuePlayerDelegate.h"
 #import "YTSingleVideo.h"
@@ -15,4 +16,5 @@
 - (BOOL)isMuted;
 - (void)playerRateDidChange:(float)rate;
 - (void)setMuted:(BOOL)muted;
+- (void)reloadPlayerWithContext:(MLPlayerReloadContext *)context;
 @end
