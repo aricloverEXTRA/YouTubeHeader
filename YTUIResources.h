@@ -2,11 +2,16 @@
 
 @interface YTUIResources : NSObject
 + (UIImage *)actionsheetDefaultImage;
++ (UIImage *)actionsheetUnsubscribeImage;
++ (UIImage *)audioFillWithColor:(UIColor *)color;
 + (UIImage *)bookmarkOutline;
++ (UIImage *)closedCaptionIconImage;
 + (UIImage *)iconAccountCircle;
 + (UIImage *)iconAccountCircleDark;
 + (UIImage *)iconCheckTemplateImage;
 + (UIImage *)tabIconAccountImageWithSelected:(BOOL)selected;
 + (UIImage *)xCircleOutline;
++ (UIImage *)outlineTextWithColor:(UIColor *)color;
++ (UIImage *)tintImage:(UIImage *)image color:(UIColor *)color;
 + (BOOL)delhiIconsEnabled;
 @end
