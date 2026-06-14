@@ -14,6 +14,7 @@
 - (YTSingleVideo *)videoData;
 - (NSArray <MLFormat *> *)selectableVideoFormats;
 - (BOOL)isMuted;
+- (void)playerRateDidChange:(float)rate;
 - (void)setMuted:(BOOL)muted;
 - (void)reloadPlayerWithContext:(MLPlayerReloadContext *)context;
 @end
