@@ -1,4 +1,4 @@
-#import <Foundation/Foundation.h>
+#import <Foundation/NSObject.h>
 
 #import "GPBRuntimeTypes.h"
 
@@ -24,7 +24,7 @@ typedef NS_ENUM(uint8_t, GPBFieldType) {
 
 __attribute__((objc_subclassing_restricted))
 @interface GPBDescriptor : NSObject<NSCopying>
-
+- (void)setupOneofs:(const char **)oneofNames count:(uint32_t)count firstHasIndex:(int32_t)firstHasIndex;
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
 @property(nonatomic, readonly, copy) NSString *name;
