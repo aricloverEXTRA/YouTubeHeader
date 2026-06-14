@@ -1,4 +1,4 @@
-#import <Foundation/Foundation.h>
+#import <Foundation/NSObject.h>
 
 #import "GPBArray.h"
 #import "GPBUnknownFields.h"
