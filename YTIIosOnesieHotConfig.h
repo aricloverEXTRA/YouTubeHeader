@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface YTIIosOnesieHotConfig : NSObject
 @property (nonatomic, assign, readwrite) BOOL prepareVideoDecoder;

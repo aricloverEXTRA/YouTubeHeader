@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
 // YouTube 17.19.2 and higher

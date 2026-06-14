@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface YTPlayerOverlay : NSObject
 - (NSString *)overlayIdentifier;

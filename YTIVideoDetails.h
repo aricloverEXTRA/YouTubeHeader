@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface YTIVideoDetails : NSObject
 @property (nonatomic, assign, readwrite) BOOL allowRatings;

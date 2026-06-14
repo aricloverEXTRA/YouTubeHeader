@@ -1,5 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface MLVideoDecoderFactory : NSObject
-- (void)clearPreparedDecoder;
 @end

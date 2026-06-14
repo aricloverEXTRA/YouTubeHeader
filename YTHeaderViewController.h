@@ -1,5 +1,5 @@
-#import <UIKit/UIViewController.h>
+#import <UIKit/UIKit.h>
+#import "YTQTMButton.h"
 
 @interface YTHeaderViewController : UIViewController
-- (BOOL)isTopLevelPage;
 @end

@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface ELMElement : NSObject
 - (id)newChildElementWithInstance:(const void *)instance;

@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface YTAppSettingsStore : NSObject
 + (NSUInteger)valueTypeForSetting:(int)setting;

@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 #import "YTHUDMessage.h"
 
 @interface GOOHUDManagerInternal : NSObject

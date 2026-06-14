@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface ELMPBIdentifierProperties : NSObject
 - (id)identifier;

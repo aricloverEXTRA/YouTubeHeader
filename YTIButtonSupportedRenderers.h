@@ -1,9 +1,7 @@
-#import "YTIButtonRenderer.h"
-#import "YTILikeButtonRenderer.h"
 #import "YTIToggleButtonRenderer.h"
+#import "YTIButtonRenderer.h"
 
 @interface YTIButtonSupportedRenderers : NSObject
-@property (nonatomic, strong, readwrite) YTIButtonRenderer *buttonRenderer;
-@property (nonatomic, strong, readwrite) YTILikeButtonRenderer *likeButtonRenderer;
 @property (nonatomic, strong, readwrite) YTIToggleButtonRenderer *toggleButtonRenderer;
+@property (retain, nonatomic) YTIButtonRenderer *buttonRenderer;
 @end

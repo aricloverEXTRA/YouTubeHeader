@@ -1,4 +1,4 @@
-#import <UIKit/UIView.h>
+#import <UIKit/UIKit.h>
 
 @interface YTPlayerBarRectangleDecorationView : UIView
 @end

@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface YTSettingsGroupData : NSObject
 @property (nonatomic, readonly, strong) NSString *title;

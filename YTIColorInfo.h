@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface YTIColorInfo : NSObject
 @property (nonatomic, assign, readwrite) int transferCharacteristics;

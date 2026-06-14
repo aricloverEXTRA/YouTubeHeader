@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 #import "HAMSoftwareStreamFilter.h"
 
 typedef struct HAMDefaultABRPolicyConfig {

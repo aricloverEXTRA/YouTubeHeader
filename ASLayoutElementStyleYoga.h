@@ -1,5 +1,4 @@
-#import <CoreGraphics/CGBase.h>
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface ASLayoutElementStyleYoga : NSObject
 @property (nonatomic, assign, readwrite) CGFloat spacingBefore;

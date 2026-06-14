@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 #import "YTMainWindow.h"
 
 @interface YTCommonUtils : NSObject

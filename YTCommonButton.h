@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @protocol YTCommonButton <NSObject>
 @property (nonatomic, assign, readwrite) BOOL refreshRendererAfterPageStyling;

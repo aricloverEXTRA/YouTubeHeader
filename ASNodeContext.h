@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface ASNodeContext : NSObject
 - (instancetype)initWithOptions:(unsigned char)options;

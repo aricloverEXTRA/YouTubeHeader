@@ -12,7 +12,6 @@
 @property (nonatomic, assign, readwrite) BOOL sizeWithPaddingAndInsets;
 @property (nonatomic, strong, readwrite) UIColor *customTintColor;
 - (UILabel *)titleLabel;
-- (CGFloat)buttonHeightFromRenderer;
 - (void)enableNewTouchFeedback;
 - (void)setTitleTypeKind:(NSInteger)typeKind;
 - (void)setTitleTypeKind:(NSInteger)typeKind typeVariant:(NSInteger)typeVariant;

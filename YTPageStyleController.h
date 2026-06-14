@@ -6,5 +6,4 @@
 + (NSInteger)pageStyle;
 @property (nonatomic, assign, readwrite) NSInteger appThemeSetting;
 @property (nonatomic, assign, readonly) NSInteger pageStyle;
-- (void)setEffectivePageStyle:(NSInteger)pageStyle;
 @end

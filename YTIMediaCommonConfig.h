@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 @interface YTIMediaCommonConfig : NSObject
 @property (nonatomic, assign, readwrite) BOOL useServerDrivenAbr;
