@@ -1,4 +1,4 @@
-#import <Foundation/NSObject.h>
+#import <Foundation/Foundation.h>
 
 #import "GPBRuntimeTypes.h"
 
@@ -24,10 +24,6 @@ typedef NS_ENUM(uint8_t, GPBFieldType) {
 
 __attribute__((objc_subclassing_restricted))
 @interface GPBDescriptor : NSObject<NSCopying>
-
-- (void)setupOneofs:(const char * _Nonnull const * _Nonnull)oneofNames
-              count:(uint32_t)count
-     firstHasIndex:(int32_t)firstHasIndex;
 
 - (instancetype)init NS_UNAVAILABLE;
 + (instancetype)new NS_UNAVAILABLE;
@@ -86,11 +82,10 @@ __attribute__((objc_subclassing_restricted))
 @property(nonatomic, readonly) BOOL hasDefaultValue;
 @property(nonatomic, readonly) GPBGenericValue defaultValue;
 @property(nonatomic, readonly, getter=isRequired) BOOL required;
-@property(nonatomic, readonly, getter=isOptional) BOOL optional DEPRECATED_MSG_ATTRIBUTE(
-    "Check if fieldType is GPBFieldTypeSingle and that it is NOT required.");
 @property(nonatomic, readonly) GPBFieldType fieldType;
 @property(nonatomic, readonly) GPBDataType mapKeyDataType;
 @property(nonatomic, readonly, getter=isPackable) BOOL packable;
+
 @property(nonatomic, readonly, nullable) GPBOneofDescriptor *containingOneof;
 @property(nonatomic, readonly, nullable) Class msgClass;
 @property(nonatomic, readonly, strong, nullable) GPBEnumDescriptor *enumDescriptor;
@@ -109,12 +104,10 @@ __attribute__((objc_subclassing_restricted))
 @property(nonatomic, readonly, copy) NSString *name;
 @property(nonatomic, readonly) GPBEnumValidationFunc enumVerifier;
 @property(nonatomic, readonly) BOOL isClosed;
-
 - (nullable NSString *)enumNameForValue:(int32_t)number;
 - (BOOL)getValue:(nullable int32_t *)outValue forEnumName:(NSString *)name;
 - (nullable NSString *)textFormatNameForValue:(int32_t)number;
 - (BOOL)getValue:(nullable int32_t *)outValue forEnumTextFormatName:(NSString *)textFormatName;
-
 @property(nonatomic, readonly) uint32_t enumNameCount;
 - (nullable NSString *)getEnumNameForIndex:(uint32_t)index;
 - (nullable NSString *)getEnumTextFormatNameForIndex:(uint32_t)index;
