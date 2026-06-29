@@ -1,6 +1,6 @@
 #import "ELMPBElement.h"
 
-@interface ELMPBShowActionSheetCommand : GPBMessage
+@interface ELMPBUpdateActionSheetCommand : GPBMessage
 @property (nonatomic, readwrite, copy) NSString *sheetId;
 @property (nonatomic, readwrite, strong) ELMPBElement *header;
 @property (nonatomic, readwrite, strong) ELMPBElement *footer;
