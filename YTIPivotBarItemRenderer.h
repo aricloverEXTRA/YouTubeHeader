@@ -5,7 +5,7 @@
 #import "YTIRenderer.h"
 #import "YTIThumbnailDetails.h"
 
-@interface YTIPivotBarItemRenderer : NSObject
+@interface YTIPivotBarItemRenderer : GPBMessage
 @property (nonatomic, copy, readwrite) NSString *pivotIdentifier;
 @property (nonatomic, copy, readwrite) NSString *targetId;
 @property (nonatomic, strong, readwrite) YTIThumbnailDetails *thumbnail;
@@ -16,10 +16,7 @@
 @property (nonatomic, strong, readwrite) YTIAccessibilitySupportedDatas *accessibility;
 @property (nonatomic, assign, readonly) int imageOneOfCase;
 @property (nonatomic, strong, readwrite) YTIIcon *icon;
-// @property (nonatomic, strong, readwrite) YTIThumbnailDetails *thumbnail;
 @property (nonatomic, strong, readwrite) YTIRenderer *avatar;
-// @property (nonatomic, strong, readwrite) YTIPivotBarItemPresentationStyle *presentationStyle;
-// @property (nonatomic, strong, readwrite) YTIPivotBarItemIndicatorSupportedRenderers *indicator;
 @property (nonatomic, copy, readwrite) NSData *trackingParams;
 @property (nonatomic, assign, readwrite) int navigationType;
 @property (nonatomic, strong, readwrite) YTIRenderer *progressIndicator;
