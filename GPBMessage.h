@@ -59,9 +59,12 @@ CF_EXTERN_C_END
 - (void)clear;
 - (void)clearUnknownFields;
 - (BOOL)mergeUnknownFields:(GPBUnknownFields *)unknownFields extensionRegistry:(nullable id<GPBExtensionRegistry>)extensionRegistry error:(NSError **)errorPtr;
-
-// Compatibility shim for older code (e.g., YouTubeLegacy) that used firstSubmessage
 - (nullable id)firstSubmessage;
+@property(nonatomic, readonly, strong, nullable) GPBUnknownFields *unknownFields;
++ (nullable instancetype)parseFromData:(NSData *)data;
 @end
+
+// Legacy compatibility: GPBUnknownFieldSet was renamed to GPBUnknownFields
+typedef GPBUnknownFields GPBUnknownFieldSet;
 
 NS_ASSUME_NONNULL_END

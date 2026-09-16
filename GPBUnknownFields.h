@@ -38,6 +38,9 @@ __attribute__((objc_subclassing_restricted))
 - (nullable NSData *)firstLengthDelimited:(int32_t)fieldNumber;
 - (nullable GPBUnknownFields *)firstGroup:(int32_t)fieldNumber;
 
+// Legacy compatibility: old API used getField:
+- (nullable GPBUnknownField *)getField:(int32_t)fieldNumber;
+
 @end
 
 NS_ASSUME_NONNULL_END

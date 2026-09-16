@@ -27,6 +27,9 @@ __attribute__((objc_subclassing_restricted))
 @property (nonatomic, readonly, strong) NSArray <NSData *> *lengthDelimitedList;
 @property(nonatomic, readonly, strong, nonnull) GPBUnknownFields *group;
 
+// Legacy compatibility: old API used varintList
+@property(nonatomic, readonly, strong, nullable) GPBUInt64Array *varintList;
+
 @end
 
 NS_ASSUME_NONNULL_END
